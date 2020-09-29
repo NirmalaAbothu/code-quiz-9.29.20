@@ -1,0 +1,119 @@
+h1 {
+     text-align: center;
+     font-size: 40px;
+     color: darkgreen;
+}
+article {
+     font-size: 20px;
+     color: black;
+     font-weight: bold;
+}
+
+.scoreid {
+     text-align: center;
+}
+h2 {
+     /* text-align: center; */
+     width: 100;
+     height: 30px;
+     border: 1px solid gray;
+     margin-left: 150px;
+     margin-right: 150px;
+     background-color: aqua;
+}
+/* .reset-btn,
+.clear-btn {
+     text-align: center;
+} */
+header {
+     font-size: large;
+     color: darkblue;
+}
+main {
+     position: relative;
+     width: 700px;
+     height: 550px;
+     top: 100px;
+     left: 400px;
+     border: 5px solid green;
+     background-color: lightgrey;
+}
+.container {
+     text-align: center;
+}
+button {
+     margin-top: 30px;
+     margin-bottom: 20px;
+     /* background-color: green; */
+     /* color: white; */
+     /* font-weight: bold;
+     font-size: 1.5rem; */
+}
+.grid {
+     display: grid;
+}
+
+.btn {
+     font-weight: bold;
+     padding: 10px 20px;
+     border: 1px solid white;
+     background-color: aqua;
+}
+
+.btn:hover {
+     border-color: darkgreen;
+}
+.hide {
+     display: none;
+}
+.start-btn,
+.clear-btn,
+.reset-btn {
+     font-size: 1rem;
+}
+.btn {
+     font-size: 1 rem;
+}
+.header-right {
+     float: right;
+}
+#showresult {
+     margin-top: 20px;
+     border-top: 2px solid darkgray;
+     /* text-decoration: overline; */
+}
+#qcontainer {
+     /* position: relative; */
+     /* width: 300px;
+     height: 100px;
+     top: 100px;
+     left: 400px;
+     border: 5px solid green;
+     background-color: lightgrey; */
+}
+
+#msg.success,
+#msg.error {
+     visibility: visible;
+     font-size: larger;
+}
+
+#msg.success {
+     color: darkgreen;
+}
+
+#msg.error {
+     color: #e6252c;
+}
+#answer-buttons {
+     display: table;
+     margin: 0 auto;
+}
+#question {
+     font-size: 20px;
+     font-weight: bold;
+     margin-bottom: 20px;
+}
+#qcontainer {
+     margin-top: 60px;
+}

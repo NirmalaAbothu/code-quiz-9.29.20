@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <link rel="stylesheet" href="./Assets/style.css" />
+          <title>Quiz Application</title>
+     </head>
+     <body>
+          <main>
+               <header>
+                    view highscores
+                    <section class="header-right">
+                         Time: <span id="totalminutes">40</span>
+                    </section>
+               </header>
+               <section id="codequiz" class="container">
+                    <h1>Javascript code quiz</h1>
+                    <article>
+                         This is about Javascript basics code quiz. Take this
+                         test to check your knowledge about javascript basics.
+                    </article>
+
+                    <button id="start-btn" class="start-btn btn">
+                         Start Quiz
+                    </button>
+               </section>
+               <section id="qcontainer" class="hide container">
+                    <section id="question">Question</section>
+                    <ol id="answer-buttons" class="grid">
+                         <button class="btn">Answer 1</button>
+                         <button class="btn">Answer 2</button>
+                         <button class="btn">Answer 3</button>
+                         <button class="btn">Answer 4</button>
+                    </ol>
+               </section>
+               <section id="showresult" class="hide container"></section>
+
+               <!-- form -->
+
+               <section id="scores" class="container hide">
+                    <h1>All done</h1>
+                    <h3>Final score:<span id="finalscores"></span></h3>
+                    <form class="form-inline" action="post">
+                         <div class="form-group">
+                              <label for="initials">Enter initials</label>
+
+                              <input
+                                   type="text"
+                                   class="form-control"
+                                   id="initials"
+                                   name="initials"
+                              />
+
+                              <button
+                                   type="submit"
+                                   class="btn btn-default"
+                                   id="sign-up"
+                              >
+                                   Submit
+                              </button>
+                         </div>
+                    </form>
+                    <section id="msg"></section>
+               </section>
+          </main>
+          <script src="./Assets/script.js"></script>
+     </body>
+</html>
