@@ -10,24 +10,30 @@
           <title>Quiz Application</title>
      </head>
      <body>
+          <!-- main tag -->
           <main>
+               <!-- header tag for diplaying view highscores text and Time -->
                <header>
                     view highscores
                     <section class="header-right">
-                         Time: <span id="totalminutes">40</span>
+                         Time: <span id="totalminutes">0</span>
                     </section>
                </header>
+               <!-- starting page of QuizApp -->
                <section id="codequiz" class="container">
+                    <!-- heading -->
                     <h1>Javascript code quiz</h1>
+                    <!-- article about the quiz -->
                     <article>
                          This is about Javascript basics code quiz. Take this
-                         test to check your knowledge about javascript basics.
+                         quiz to test your knowledge about javascript basics.
                     </article>
-
+                    <!-- starting button to start the quiz app -->
                     <button id="start-btn" class="start-btn btn">
                          Start Quiz
                     </button>
                </section>
+               <!-- question and answerbuttons section -->
                <section id="qcontainer" class="hide container">
                     <section id="question">Question</section>
                     <ol id="answer-buttons" class="grid">
@@ -37,17 +43,15 @@
                          <button class="btn">Answer 4</button>
                     </ol>
                </section>
-               <section id="showresult" class="hide container"></section>
-
-               <!-- form -->
-
+               <!-- This section displays scores -->
                <section id="scores" class="container hide">
                     <h1>All done</h1>
                     <h3>Final score:<span id="finalscores"></span></h3>
                     <form class="form-inline" action="post">
-                         <div class="form-group">
+                         <!-- form takes user initials and displays final score -->
+                         <section class="form-group">
                               <label for="initials">Enter initials</label>
-
+                              <!-- input text box for user initials -->
                               <input
                                    type="text"
                                    class="form-control"
@@ -55,6 +59,7 @@
                                    name="initials"
                               />
 
+                              <!-- submit button to submit the form -->
                               <button
                                    type="submit"
                                    class="btn btn-default"
@@ -62,11 +67,17 @@
                               >
                                    Submit
                               </button>
-                         </div>
+                         </section>
                     </form>
+                    <!-- message section displays missage to user   -->
+                    <!-- if user trying to submit form without entering initials -->
                     <section id="msg"></section>
                </section>
+               <!-- showresult section to display answer -->
+               <!-- after user select answer from answer choices -->
+               <section id="showresult" class="hide container"></section>
           </main>
+          <!-- javascript file -->
           <script src="./Assets/script.js"></script>
      </body>
 </html>
