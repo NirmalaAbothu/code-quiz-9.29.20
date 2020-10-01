@@ -23,7 +23,7 @@
 Implemented the code to create quiz application.
 Once user open the application,the starting page will have following fields and article.
 
--    header section will have view highScores text and Time.
+-    header section will have view highscores text and Time.
 -    Time will be assigned by value once user clicks on start quiz button.
 -    heading.
 -    article about quiz app.
