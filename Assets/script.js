@@ -169,6 +169,10 @@ function setTime() {
                clearInterval(timerInterval);
                //calling sendMessage method
                sendMessage();
+               //calling displaScores function
+               displayScores();
+               //calling getScores function
+               getScores();
           }
      }, 1000);
 }
@@ -180,13 +184,20 @@ function sendMessage() {
 
 //set scores to localstorage
 function setScores() {
+     console.log(scores);
      localStorage.setItem("score", scores);
 }
 
 //get scores from loclastorage
 function getScores() {
      var totalScores = localStorage.getItem("score");
-     finalScoresEL.textContent = totalScores;
+     // if user not even select fist questin answer,then  0 value
+     // will be assigned to totalScores
+     if (totalScores === null) {
+          finalScoresEL.textContent = 0;
+     } else {
+          finalScoresEL.textContent = totalScores;
+     }
 }
 
 //function displayMessage to display the message to user

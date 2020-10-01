@@ -12,9 +12,9 @@ function getLocalStoragItems() {
      finalTotalScoreEL.textContent = localStorage.getItem("finalscores");
 }
 
-//function to clear highscore localstorage
+//function to clear highscore
 function clearScore() {
-     localStorage.clear();
+     //hiding display finalscore section
      displayScoreEL.classList.add("hide");
 }
 
